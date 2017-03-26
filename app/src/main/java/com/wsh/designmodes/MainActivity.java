@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.wsh.designmodes.adapter.AdapterTest;
+import com.wsh.designmodes.command.CommandTest;
 import com.wsh.designmodes.composite.CompositeTest;
 import com.wsh.designmodes.decorator.DecoratorTest;
 import com.wsh.designmodes.facade.FacadeTest;
@@ -41,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
 //        testDecorator();
 //        testFacade();
 //        testTemplateTest();
-        testProxy();
+//        testProxy();
+        testCommand();
+    }
+
+    private void testCommand() {
+        CommandTest.getInstance().test();
     }
 
     private void testProxy() {
