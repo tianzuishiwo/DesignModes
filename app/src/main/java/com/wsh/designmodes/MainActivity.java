@@ -9,6 +9,8 @@ import com.wsh.designmodes.decorator.DecoratorTest;
 import com.wsh.designmodes.facade.FacadeTest;
 import com.wsh.designmodes.factory.FactoryTest;
 import com.wsh.designmodes.prototype.PrototypeTest;
+import com.wsh.designmodes.proxy.ProxyTest;
+import com.wsh.designmodes.template.TemplateTest;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +39,17 @@ public class MainActivity extends AppCompatActivity {
 //        testAdapter();
 //        testComposite();
 //        testDecorator();
-        testFacade();
+//        testFacade();
+//        testTemplateTest();
+        testProxy();
+    }
+
+    private void testProxy() {
+        ProxyTest.getInstance().test();
+    }
+
+    private void testTemplateTest() {
+        TemplateTest.getInstance().test();
     }
 
     private void testFacade() {
