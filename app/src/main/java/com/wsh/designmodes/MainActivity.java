@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.wsh.designmodes.adapter.AdapterTest;
 import com.wsh.designmodes.composite.CompositeTest;
 import com.wsh.designmodes.decorator.DecoratorTest;
+import com.wsh.designmodes.facade.FacadeTest;
 import com.wsh.designmodes.factory.FactoryTest;
 import com.wsh.designmodes.prototype.PrototypeTest;
 
@@ -35,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
 //        testPrototype();
 //        testAdapter();
 //        testComposite();
-        testDecorator();
+//        testDecorator();
+        testFacade();
+    }
+
+    private void testFacade() {
+        FacadeTest.getInstance().test();
     }
 
     private void testDecorator() {
