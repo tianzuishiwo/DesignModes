@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.wsh.designmodes.adapter.AdapterTest;
+import com.wsh.designmodes.composite.CompositeTest;
+import com.wsh.designmodes.decorator.DecoratorTest;
 import com.wsh.designmodes.factory.FactoryTest;
 import com.wsh.designmodes.prototype.PrototypeTest;
 
@@ -31,7 +33,17 @@ public class MainActivity extends AppCompatActivity {
 //        testSingleTon();
 //        testFactory();
 //        testPrototype();
-        testAdapter();
+//        testAdapter();
+//        testComposite();
+        testDecorator();
+    }
+
+    private void testDecorator() {
+        DecoratorTest.getInstance().test();
+    }
+
+    private void testComposite() {
+        CompositeTest.getIntance().test();
     }
 
     private void testAdapter() {
