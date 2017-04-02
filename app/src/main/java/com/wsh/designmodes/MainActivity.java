@@ -10,8 +10,10 @@ import com.wsh.designmodes.decorator.DecoratorTest;
 import com.wsh.designmodes.facade.FacadeTest;
 import com.wsh.designmodes.factory.FactoryTest;
 import com.wsh.designmodes.iterator.IteratorTest;
+import com.wsh.designmodes.observer.ObserverTest;
 import com.wsh.designmodes.prototype.PrototypeTest;
 import com.wsh.designmodes.proxy.ProxyTest;
+import com.wsh.designmodes.singleton.SingleTonTest;
 import com.wsh.designmodes.template.TemplateTest;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +47,12 @@ public class MainActivity extends AppCompatActivity {
 //        testTemplateTest();
 //        testProxy();
 //        testCommand();
-        testIterator();
+//        testIterator();
+        testObserver();
+    }
+
+    private void testObserver() {
+        ObserverTest.getInstance().test();
     }
 
     private void testIterator() {
@@ -89,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void testSingleTon() {
-//        SingleTonTest.getInstance().test();
-
+        SingleTonTest.getInstance().test();
     }
 }
