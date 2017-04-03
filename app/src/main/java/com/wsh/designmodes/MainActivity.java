@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
 //        testComposite();
 //        testDecorator();
 //        testFacade();
-//        testTemplateTest();
+        testTemplateTest();
 //        testProxy();
 //        testCommand();
 //        testIterator();
 //        testObserver();
 //        testState();
-        testStrategy();
+//        testStrategy();
 
     }
 
