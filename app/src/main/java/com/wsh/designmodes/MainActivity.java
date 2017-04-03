@@ -14,6 +14,7 @@ import com.wsh.designmodes.observer.ObserverTest;
 import com.wsh.designmodes.prototype.PrototypeTest;
 import com.wsh.designmodes.proxy.ProxyTest;
 import com.wsh.designmodes.singleton.SingleTonTest;
+import com.wsh.designmodes.state.StateTest;
 import com.wsh.designmodes.template.TemplateTest;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +49,13 @@ public class MainActivity extends AppCompatActivity {
 //        testProxy();
 //        testCommand();
 //        testIterator();
-        testObserver();
+//        testObserver();
+        testState();
+
+    }
+
+    private void testState() {
+        StateTest.getIntance().test();
     }
 
     private void testObserver() {
