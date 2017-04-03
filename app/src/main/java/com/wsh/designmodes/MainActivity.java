@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.wsh.designmodes.adapter.AdapterTest;
+import com.wsh.designmodes.bridge.BridgeTest;
 import com.wsh.designmodes.command.CommandTest;
 import com.wsh.designmodes.composite.CompositeTest;
 import com.wsh.designmodes.decorator.DecoratorTest;
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         test();
     }
 
+    //排序
+    //三星  桥接3
+    //二星  备忘录2 中介者3 职责连3 建造者4
+    //一星  享元4 访问者4 解释器5
     private void test() {
 //        testSingleTon();
 //        testFactory();
@@ -46,14 +51,18 @@ public class MainActivity extends AppCompatActivity {
 //        testComposite();
 //        testDecorator();
 //        testFacade();
-        testTemplateTest();
+//        testTemplateTest();
 //        testProxy();
 //        testCommand();
 //        testIterator();
 //        testObserver();
 //        testState();
 //        testStrategy();
+          testBridge();
+    }
 
+    private void testBridge() {
+        BridgeTest.getInstance().test();
     }
 
     private void testStrategy() {
