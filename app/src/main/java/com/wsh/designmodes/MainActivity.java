@@ -15,6 +15,7 @@ import com.wsh.designmodes.prototype.PrototypeTest;
 import com.wsh.designmodes.proxy.ProxyTest;
 import com.wsh.designmodes.singleton.SingleTonTest;
 import com.wsh.designmodes.state.StateTest;
+import com.wsh.designmodes.strategy.StrategyTest;
 import com.wsh.designmodes.template.TemplateTest;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,8 +51,13 @@ public class MainActivity extends AppCompatActivity {
 //        testCommand();
 //        testIterator();
 //        testObserver();
-        testState();
+//        testState();
+        testStrategy();
 
+    }
+
+    private void testStrategy() {
+        StrategyTest.getInstance().test();
     }
 
     private void testState() {
