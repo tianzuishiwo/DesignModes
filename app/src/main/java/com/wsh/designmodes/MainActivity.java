@@ -11,6 +11,7 @@ import com.wsh.designmodes.decorator.DecoratorTest;
 import com.wsh.designmodes.facade.FacadeTest;
 import com.wsh.designmodes.factory.FactoryTest;
 import com.wsh.designmodes.iterator.IteratorTest;
+import com.wsh.designmodes.memento.MementoTest;
 import com.wsh.designmodes.observer.ObserverTest;
 import com.wsh.designmodes.prototype.PrototypeTest;
 import com.wsh.designmodes.proxy.ProxyTest;
@@ -58,7 +59,12 @@ public class MainActivity extends AppCompatActivity {
 //        testObserver();
 //        testState();
 //        testStrategy();
-          testBridge();
+//        testBridge();
+        testMemento();
+    }
+
+    private void testMemento() {
+        MementoTest.getInstance().test();
     }
 
     private void testBridge() {
